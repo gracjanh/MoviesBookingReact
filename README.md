@@ -13,6 +13,7 @@ Get the ticket:
 ![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/e129b079-701c-4c34-bacf-bc9ca8c4468b)
 
 Bookings data in the database:
+
 ![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/0cb96d3b-cc84-4589-9e63-98a1ffe1273b)
 
 Orders data in the database:

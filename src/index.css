@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #242424;
+}
+
+.row-number {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.seat {
+    width: 45px;
+    height: 45px;
+    margin: 0.3rem;
+}
+
+.row-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seats-container {
+    width: 1100px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.screen {
+    width: 1000px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 3rem auto;
+    pointer-events: none;
+}
+
+.btn-cancel,
+.btn-back,
+.btn-buy {
+    width: 120px;
+    height: 60px;
+}
+
+.btns-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.img-container {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.movies-container {
+    width: 80vw;
+    height: 400px;
+}
+
+.order-tickets {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.total-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.table {
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+    .seat {
+        width: 35px;
+        height: 35px;
+        font-size: 0.7rem;
+    }
+    .row-number {
+        width: 35px;
+        height: 35px;
+        font-size: 0.7rem;
+    }
+
+    .seats-container {
+        width: 900px;
+    }
+
+    .screen {
+        width: 830px;
+        height: 25px;
+        font-size: 0.8rem;
+        margin: 0 auto 0 auto;
+    }
+
+    .btns-container {
+        margin-top: -2rem;
+    }
+    .btn-buy,
+    .btn-cancel,
+    .btn-back {
+        width: 100px;
+        height: 50px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .seat {
+        width: 30px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+    .row-number {
+        width: 30px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+
+    .seats-container {
+        width: 700px;
+    }
+
+    .screen {
+        width: 650px;
+        height: 20px;
+        font-size: 0.8rem;
+        margin: 0 auto -2.5rem auto;
+    }
+    .btns-container {
+        margin-top: -4rem;
+    }
+    .btn-buy,
+    .btn-cancel,
+    .btn-back {
+        width: 90px;
+        height: 45px;
+        font-size: 0.7rem;
+    }
+}

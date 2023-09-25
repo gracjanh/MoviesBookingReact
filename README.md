@@ -1,6 +1,6 @@
 This app allows user to book a movie. Tech stack: React, Node.js, MySQL
 
-Login or Sign Up. Sample data - E-mail/Password: jjanowski@gmail.com/123, ppiotrowski@onet.pl/qwerty, jkowalski@gmail.com"/jkjkjk123
+Login or Sign Up:
 
 ![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/e8f9a6cf-7e74-47a6-943a-25342969abad)
 ![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/dd6533c0-b4ca-4aaf-a8a1-cc3423a32a22)

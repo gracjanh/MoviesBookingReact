@@ -106,7 +106,7 @@ const OrderModal = ({ title }) => {
 
         // Making an order - sending data to the server
         fetch(`http://localhost:8081/orders`, {
-            method: "PUT",
+            method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },

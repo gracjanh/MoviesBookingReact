@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import { Button } from "react-bootstrap";
 import CancelModal from "./CancelModal";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Navigate } from "react-router-dom";
 import OrderModal from "./OrderModal";
 import { AppContext } from "../context";
 import Seats from "./Seats";
@@ -14,6 +14,7 @@ const ScreeningRoom = ({ title }) => {
         setSelectedSeats,
         setIsOrderModalOpen,
         setIsModalOpen,
+        userLoggedIn,
     } = useContext(AppContext);
 
     const navigate = useNavigate();
@@ -79,6 +80,10 @@ const ScreeningRoom = ({ title }) => {
         setIsOrderModalOpen(true);
     };
 
+    if (!userLoggedIn) {
+        return <Navigate to="/" />;
+    }
+
     return (
         <div className="main-container">
             {/* SCREEN */}
@@ -97,7 +102,7 @@ const ScreeningRoom = ({ title }) => {
                     type="button"
                     variant="outline-primary"
                     className="btn-back"
-                    onClick={() => navigate("/")}
+                    onClick={() => navigate("/movies")}
                 >
                     Back
                 </Button>
@@ -109,18 +114,18 @@ const ScreeningRoom = ({ title }) => {
                 >
                     Buy
                 </Button>
-                <Button
+                {/* <Button
                     type="button"
                     variant="outline-primary"
                     className="btn-cancel"
                     onClick={() => setIsModalOpen(true)}
                 >
                     Cancel All Bookings
-                </Button>
+                </Button> */}
             </div>
 
             {/* MODALS */}
-            <CancelModal handleCancelClick={handleCancelClick} />
+            {/* <CancelModal handleCancelClick={handleCancelClick} /> */}
             <OrderModal title={title} />
         </div>
     );

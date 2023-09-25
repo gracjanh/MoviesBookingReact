@@ -56,6 +56,38 @@ body {
     height: 60px;
 }
 
+.login-btn {
+    width: 100%;
+}
+
+.signup-btn,
+.signup-cancel-btn,
+.login-cancel-btn {
+    width: 100%;
+}
+
+.signup-form-btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.login-form,
+.signup-form {
+    width: 350px;
+}
+
+.form-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-check {
+    user-select: none;
+}
+
 .btns-container {
     display: flex;
     justify-content: center;
@@ -64,15 +96,36 @@ body {
 }
 
 .img-container {
-    width: 300px;
-    height: 400px;
+    width: 240px;
+    height: 320px;
     display: flex;
     justify-content: center;
 }
 
 .movies-container {
     width: 80vw;
-    height: 400px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100px;
+    transform: translateX(-50%);
+    padding: 1rem;
+}
+
+.movie-card {
+    width: 240px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-poster {
+    user-select: none;
 }
 
 .order-tickets {
@@ -102,6 +155,26 @@ body {
 
 .table {
     text-align: center;
+}
+
+.signup-text-span {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hello-text {
+    color: white;
+}
+
+.top-container {
+    width: 90vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
 }
 
 /* MEDIA QUERIES */

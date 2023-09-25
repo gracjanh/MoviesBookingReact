@@ -21,6 +21,8 @@ export const AppProvider = ({ children }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [ticketId, setTicketId] = useState("");
     const [isTicketVisible, setIsTicketVisible] = useState(false);
+    const [users, setUsers] = useState([]);
+    const [userLoggedIn, setUserLoggedIn] = useState(false);
 
     return (
         <AppContext.Provider
@@ -37,6 +39,10 @@ export const AppProvider = ({ children }) => {
                 setTicketId,
                 isTicketVisible,
                 setIsTicketVisible,
+                users,
+                setUsers,
+                userLoggedIn,
+                setUserLoggedIn,
             }}
         >
             {children}

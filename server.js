@@ -24,6 +24,32 @@ app.get("/:title", (req, res) => {
     });
 });
 
+app.get("/users", (req, res) => {
+    const sql = `SELECT * FROM users`;
+
+    db.query(sql, (err, data) => {
+        if (err) return res.json(err);
+        return res.json(data);
+    });
+});
+
+app.post("/users", (req, res) => {
+    const { firstName, lastName, email, password } = req.body;
+    const sql = `INSERT INTO users (first_name, last_name, user_email, user_password ) VALUES (?, ?, ?, ?)`;
+
+    db.query(sql, [firstName, lastName, email, password], (err, result) => {
+        if (err) {
+            console.error("Error", err);
+            return res.json({ success: false, message: "Error" });
+        } else {
+            return res.json({
+                success: true,
+                message: "The user has been added successfully",
+            });
+        }
+    });
+});
+
 app.put("/:title/update", (req, res) => {
     const { selectedSeats } = req.body;
     const { title } = req.params;
@@ -72,7 +98,7 @@ app.put("/:title/cancel", (req, res) => {
     });
 });
 
-app.put("/orders", (req, res) => {
+app.post("/orders", (req, res) => {
     const { formattedTitle, id, purchaseTime, purchaseDate, orderDescription, totalPrice } =
         req.body;
 

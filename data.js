@@ -14,7 +14,6 @@ export const movieTitles = [
     "house_of_wax",
     "halloween",
     "scream",
-    "i_know_what_you_did_last_summer",
 ];
 
 export const images = [
@@ -77,10 +76,6 @@ export const images = [
     {
         name: "scream",
         url: "https://xl.movieposterdb.com/22_05/2022/11245972/xl_11245972_8113c1b3.jpg?v=2023-08-14%2001:37:08",
-    },
-    {
-        name: "i_know_what_you_did_last_summer",
-        url: "https://xl.movieposterdb.com/12_10/1997/119345/xl_119345_1420e54e.jpg?v=2023-08-13%2003:04:14",
     },
 ];
 

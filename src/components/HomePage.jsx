@@ -1,26 +1,24 @@
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { images, sliderSettings } from "../../data";
-import { AppContext } from "../context";
+import React from "react";
+import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
-    const {} = useContext(AppContext);
+    const navigate = useNavigate();
 
     return (
-        <div className="movies-container">
-            <Slider {...sliderSettings}>
-                {images.map((image, i) => (
-                    <Link to={`/${image.name}`} key={i}>
-                        <div className="img-container">
-                            <img className="img-poster" src={image.url} />
-                        </div>
-                    </Link>
-                ))}
-            </Slider>
-        </div>
+        <>
+            <Button type="button" onClick={() => navigate("/login")}>
+                Log In
+            </Button>
+
+            <Button
+                type="button"
+                onClick={() => navigate("/signup")}
+                style={{ marginLeft: "0.5rem" }}
+            >
+                Sign Up
+            </Button>
+        </>
     );
 };
 

@@ -3,7 +3,8 @@ This app allows user to book a movie. Tech stack: React, Node.js, MySQL
 Log in or Sign up:
 
 ![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/9fe7cbb5-677f-4baa-ac05-373a055a0965)
-![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/dd6533c0-b4ca-4aaf-a8a1-cc3423a32a22)
+![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/24b6ce03-2780-4395-85ba-009591c3af24)
+
 
 Choose a movie:
 ![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/c07e0289-8714-454d-9893-8bd9b83a10c5)

@@ -11,15 +11,17 @@ Choose a movie:
 ![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/c07e0289-8714-454d-9893-8bd9b83a10c5)
 
 Book seats:
-![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/f02c228f-d702-4030-b9e3-b8ae0be5917b)
+![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/3d013b98-7199-4610-9f2a-a0f9bd783af8)
 
 
 Confirm the order:
 
-![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/e25f11da-93fa-4698-a938-896d4b5c6b64)
+![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/15ac6c56-5ff9-46dc-ad71-677b71c66d4b)
+![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/9305a756-ec41-4ba3-92df-3ae8dad3f387)
+
 
 Get the ticket:
-![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/0019d0e3-4f91-49a1-8489-c17fbb0bf883)
+![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/b5badaba-057f-4e96-ade9-fdc77fc58c3e)
 
 
 Bookings data in the database:

@@ -85,7 +85,7 @@ const LoginForm = () => {
                     className="login-btn"
                     onClick={(e) => handleLoginClick(e)}
                 >
-                    Login
+                    Log In
                 </Button>
             </div>
         </Form>

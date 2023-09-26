@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Button, Modal, Table } from "react-bootstrap";
 import TicketModal from "./TicketModal";
 import { AppContext } from "../context";
+import { PayPalButton } from "react-paypal-button-v2";
 
 const OrderModal = ({ title }) => {
     const {
@@ -58,7 +59,7 @@ const OrderModal = ({ title }) => {
     };
 
     // Making a purchase
-    const handleConfirmClick = () => {
+    const handleSuccess = () => {
         setIsOrderModalOpen(false);
         setIsTicketVisible(true);
 
@@ -159,12 +160,24 @@ const OrderModal = ({ title }) => {
                     <div className="total-text">Total: ${totalPrice}</div>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" onClick={handleConfirmClick}>
-                        Confirm
-                    </Button>
-                    <Button variant="secondary" onClick={() => setIsOrderModalOpen(false)}>
+                    <Button
+                        variant="secondary"
+                        className="order-cancel-btn"
+                        onClick={() => setIsOrderModalOpen(false)}
+                    >
                         Cancel
                     </Button>
+                    <PayPalButton
+                        amount={totalPrice}
+                        onSuccess={handleSuccess}
+                        style={{
+                            layout: "horizontal",
+                            shape: "pill",
+                            color: "silver",
+                            label: "paypal",
+                            height: 40,
+                        }}
+                    />
                 </Modal.Footer>
             </Modal>
             <TicketModal />

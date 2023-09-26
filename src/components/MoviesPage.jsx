@@ -20,7 +20,7 @@ const MoviesPage = () => {
         <>
             <div className="top-container">
                 <h2 className="hello-text">Hello {userLoggedIn.first_name}!</h2>
-                <Button onClick={handleLogOutClick}>Log out</Button>
+                <Button onClick={handleLogOutClick}>Log Out</Button>
             </div>
             <div className="movies-container">
                 {images.map((image, i) => (

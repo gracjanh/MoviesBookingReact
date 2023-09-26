@@ -117,7 +117,7 @@ const SignUpForm = () => {
                     onClick={(e) => handleRegisterClick(e)}
                     className="signup-btn"
                 >
-                    Sign up
+                    Sign Up
                 </Button>
             </div>
         </Form>

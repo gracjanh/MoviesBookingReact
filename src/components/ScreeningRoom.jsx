@@ -1,6 +1,5 @@
 import React, { useEffect, useContext } from "react";
 import { Button } from "react-bootstrap";
-import CancelModal from "./CancelModal";
 import { useNavigate, Navigate } from "react-router-dom";
 import OrderModal from "./OrderModal";
 import { AppContext } from "../context";
@@ -80,6 +79,20 @@ const ScreeningRoom = ({ title }) => {
         setIsOrderModalOpen(true);
     };
 
+    const handleBackClick = () => {
+        setSelectedSeats([]);
+
+        const seatsCopy = seats.map((rowSeats) =>
+            rowSeats.map((seat) => ({
+                ...seat,
+                isSelected: false,
+            }))
+        );
+
+        setSeats(seatsCopy);
+        navigate("/movies");
+    };
+
     if (!userLoggedIn) {
         return <Navigate to="/" />;
     }
@@ -102,7 +115,7 @@ const ScreeningRoom = ({ title }) => {
                     type="button"
                     variant="outline-primary"
                     className="btn-back"
-                    onClick={() => navigate("/movies")}
+                    onClick={handleBackClick}
                 >
                     Back
                 </Button>

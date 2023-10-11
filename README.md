@@ -1,4 +1,4 @@
-This app allows user to book a movie. Tech stack: React, Node.js, MySQL
+This app allows user to book a movie. Tech stack: React.js, Bootstrap, Node.js, MySQL
 
 Log in or Sign up:
 

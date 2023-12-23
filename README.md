@@ -1,5 +1,7 @@
 This app allows user to book a movie. Tech stack: React.js, Bootstrap, Node.js, MySQL
 
+script.sql allows user to create database and insert data into tables.
+
 Log in or Sign up:
 
 ![image](https://github.com/gracjanh/MoviesBookingReact/assets/74767350/9fe7cbb5-677f-4baa-ac05-373a055a0965)
